@@ -20,19 +20,43 @@ export default function FooterSection() {
         <div className="footer_middle flex-1 flex flex-col gap-6">
           <h2 className="text-xl font-semibold">Quick Links</h2>
           <div className="quick_links flex flex-col gap-4 text-lightgray">
-            <Link href="#navbar">Home</Link>
-            <Link href="#skills_expertise_section">Skills</Link>
-            <Link href="#projects_section">Projects</Link>
-            <Link href="#faq_section">FAQs</Link>
-            <Link href="#contact_section">Contact</Link>
+            <Link href="/" className="hover:text-lightblue  w-fit underline">
+              Home
+            </Link>
+            <Link
+              href="#skills_expertise_section"
+              className="hover:text-lightblue w-fit underline"
+            >
+              Skills
+            </Link>
+            <Link
+              href="#projects_section"
+              className="hover:text-lightblue w-fit underline"
+            >
+              Projects
+            </Link>
+            <Link
+              href="#faq_section"
+              className="hover:text-lightblue w-fit underline"
+            >
+              FAQs
+            </Link>
+            <Link
+              href="#contact_section"
+              className="hover:text-lightblue w-fit underline"
+            >
+              Contact
+            </Link>
           </div>
         </div>
         <div className="footer_right flex-1 flex flex-col gap-8">
           <h2 className="text-xl font-semibold">Connect</h2>
-          <div className="connect_links flex gap-8 animate-pulse">
+          <div className="connect_links flex gap-8 animate-pulse hover:animate-none">
             <Link
-              href="https://www.linkedin.com/in/nafizmahmud/"
-              className="bg-lightgray-opacity-2 border-1  border-lightblue rounded-md p-2 text-3xl"
+              href="mailto:nafizmahmud102@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-lightgray-opacity-2 border-1 hover:text-lightblue border-lightblue rounded-md p-2 text-3xl"
             >
               <svg
                 fill="none"
@@ -52,8 +76,10 @@ export default function FooterSection() {
               </svg>
             </Link>
             <Link
-              href="https://www.linkedin.com/in/nafizmahmud/"
-              className="bg-lightgray-opacity-2 border-1 border-lightblue rounded-md p-2 text-3xl"
+              href="https://x.com/nafiz_mahmud_99"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-lightgray-opacity-2 hover:text-lightblue border-1 border-lightblue rounded-md p-2 text-3xl"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,8 +98,10 @@ export default function FooterSection() {
             </Link>
 
             <Link
-              href="https://www.linkedin.com/in/nafizmahmud/"
-              className="bg-lightgray-opacity-2 border-1 border-lightblue rounded-md p-2 text-3xl"
+              href="https://www.linkedin.com/in/nafiz-mahmud-603063226/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-lightgray-opacity-2 hover:text-lightblue border-1 border-lightblue rounded-md p-2 text-3xl"
             >
               <svg
                 fill="currentColor"

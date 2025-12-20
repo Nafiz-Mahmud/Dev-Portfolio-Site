@@ -93,7 +93,7 @@ export default function FAQSection() {
               viewport={{ once: true }}
             >
               <button className="w-full  cursor-pointer flex justify-between items-center text-left">
-                <span className="text-md md:text-lg text-white font-medium pr-2 ">
+                <span className="text-md md:text-lg text-white hover:opacity-80 font-medium pr-2 ">
                   {faq.question}
                 </span>
                 <span className="text-lightblue font-bold  text-2xl">

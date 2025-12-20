@@ -3,7 +3,10 @@ import Link from "next/link";
 import { motion } from "motion/react";
 export default function SocialsSection() {
   return (
-    <div className="socials_nums_section   pt-28 text-white  gap-8 flx-col lg:flex items-center justify-between ">
+    <div
+      className="socials_nums_section   pt-28 text-white  gap-8 flx-col lg:flex items-center justify-between "
+      id="connect_section"
+    >
       <motion.div
         className="social_links flex-1   border-1 border-lightblue bg-lightgray-opacity-1 flex flex-col gap-2 rounded-md p-6 "
         style={{ boxShadow: ".05rem .05rem .3rem lightblue" }}
@@ -79,10 +82,10 @@ export default function SocialsSection() {
             </Link>
           </div>
         </div>
-        <p className="text-lightgray tracking-wide text-lg font-semibold">
+        <p className="text-lightgray  tracking-wide text-lg font-semibold">
           Find me on these platforms
         </p>
-        <div className="links_section    flex  gap-14">
+        <div className="links_section  flex  gap-14">
           <div className="social_media flex flex-col gap-4">
             <p className="text-lightgray tracking-wide text-lg">Social Media</p>
             <div className="social_links animate-pulse hover:animate-none flex gap-4">

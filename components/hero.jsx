@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { motion } from "motion/react";
 import Image from "next/image";
 
@@ -51,22 +52,26 @@ export default function HeroSection() {
           digital web experiences with modern web technologies.
         </motion.p>
         <div className="buttons flex gap-6">
-          <motion.button
-            className="text-white text-lg bg-gradient-to-r from-lightblue to-darkblue animate-pulse cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
-            initial={{ opacity: 0, y: initialY }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration, ease: "easeOut", delay: 0.3 }}
-          >
-            Book a Call
-          </motion.button>
-          <motion.button
-            className="text-white text-lg bg-lightgray-opacity-2 animate-pulse cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
-            initial={{ opacity: 0, y: initialY }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration, ease: "easeOut", delay: 0.4 }}
-          >
-            View Projects
-          </motion.button>
+          <Link href="#connect_section">
+            <motion.button
+              className="text-white text-lg bg-gradient-to-r from-lightblue to-darkblue animate-pulse cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
+              initial={{ opacity: 0, y: initialY }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration, ease: "easeOut", delay: 0.3 }}
+            >
+              Contact Me
+            </motion.button>
+          </Link>
+          <Link href="#projects_section">
+            <motion.button
+              className="text-white text-lg bg-lightgray-opacity-2 animate-pulse cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
+              initial={{ opacity: 0, y: initialY }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration, ease: "easeOut", delay: 0.4 }}
+            >
+              View Projects
+            </motion.button>
+          </Link>
         </div>
       </div>
       <motion.div
@@ -86,7 +91,7 @@ export default function HeroSection() {
             alt="hero"
             fill={true}
             priority={true}
-            quality={100}
+            // quality={100}
             // className="opacity-5"
             className="opacity-100"
           />

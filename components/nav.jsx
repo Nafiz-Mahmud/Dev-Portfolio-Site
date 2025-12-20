@@ -15,7 +15,7 @@ export default function Navbar() {
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <Link href="/">
-        <div className="title cursor-pointer flex gap-2 items-center">
+        <div className="title hover:opacity-80 cursor-pointer flex gap-2 items-center">
           <Image src="/devlogo.png" alt="logo" width={50} height={50} />
           <h1 className="text-2xl font-bold">Dev Portfolio</h1>
         </div>
@@ -23,13 +23,23 @@ export default function Navbar() {
 
       {/* Desktop Links */}
       <div className="links hidden md:flex gap-8 font-semibold">
-        <Link href="/">Home</Link>
-        <Link href="#skills_expertise_section">Skills</Link>
-        <Link href="#projects_section">Projects</Link>
+        <Link href="/" className="hover:opacity-70">
+          Home
+        </Link>
+        <Link href="#skills_expertise_section" className="hover:opacity-70">
+          Skills
+        </Link>
+        <Link href="#projects_section" className="hover:opacity-70">
+          Projects
+        </Link>
         {/* <Link href="#pricing_section">Pricing</Link> */}
         {/* <Link href="/blog">Blog</Link> */}
-        <Link href="#testimonials_section">Testimonials</Link>
-        <Link href="#contact_section">Contact</Link>
+        <Link href="#testimonials_section" className="hover:opacity-70">
+          Testimonials
+        </Link>
+        <Link href="#contact_section" className="hover:opacity-70">
+          Contact
+        </Link>
       </div>
 
       {/* Mobile Menu Button */}
