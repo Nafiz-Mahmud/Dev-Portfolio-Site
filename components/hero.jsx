@@ -27,19 +27,33 @@ export default function HeroSection() {
           </p>
         </motion.div>
         <motion.h1
-          className="text-white tracking-wide text-3xl lg:text-4xl font-bold "
+          className="text-white tracking-wide text-3xl lg:text-4xl font-bold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration, ease: "easeOut", delay: 0.1 }}
         >
           Hi, I'm{" "}
-          <span className="bg-gradient-to-r from-lightblue  to-purple-600 text-transparent bg-clip-text">
+          <motion.span
+            className="bg-gradient-to-r from-cyan-600 to-purple-800 text-transparent bg-clip-text"
+            style={{
+              backgroundSize: "200% auto", // Make gradient twice as wide
+            }}
+            initial={{ backgroundPositionX: "0%" }}
+            animate={{ backgroundPositionX: "100%" }}
+            transition={{
+              duration: 2,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+              delay: 0.3, // Slight delay after text appears
+            }}
+          >
             Nafiz Mahmud
-          </span>
+          </motion.span>
         </motion.h1>
 
         <motion.p
-          className="text-lightgray tracking-wide text-md lg:text-lg font-semibold"
+          className="text-lightgray text-center lg:text-left tracking-wide text-md lg:text-lg font-semibold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration, ease: "easeOut", delay: 0.2 }}
@@ -74,8 +88,32 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
+
       <motion.div
-        className="hero_img_section   flex-1 flex items-center lg:pr-[4rem] relative"
+        className="hero_img_section flex-1 flex items-center lg:pr-[4rem] relative sm:block lg:hidden"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          type: "decay",
+          delay: 0.05,
+          duration,
+        }}
+      >
+        <div className="bg_box bg-lightblue   opacity-20 z-[-1] rotate-6  lg:h-[400px] lg:w-[400px] h-[300px] w-[300px] absolute top-0% left-0% rounded-2xl shadow-md shadow-blue-600"></div>
+        <div className="img_container   lg:h-[400px] lg:w-[400px] h-[300px] w-[300px] relative rounded-2xl overflow-hidden">
+          <Image
+            src="/hero_img.png"
+            alt="hero"
+            fill={true}
+            priority={true}
+            // quality={100}
+            // className="opacity-5"
+            className="opacity-100"
+          />
+        </div>
+      </motion.div>
+      <motion.div
+        className="hero_img_section flex-1 flex items-center lg:pr-[4rem] relative hidden lg:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{

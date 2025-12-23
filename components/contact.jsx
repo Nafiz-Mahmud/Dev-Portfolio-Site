@@ -1,16 +1,8 @@
 "use client";
 import Link from "next/link";
 import { motion } from "motion/react";
-import { sendMailTestAction } from "@/action";
-
-import { useActionState } from "react";
 
 export default function ContactSection() {
-  const [state, contactActionState, pending] = useActionState(
-    sendMailTestAction,
-    {}
-  );
-
   return (
     <motion.div
       className="contact_section text-white pt-16"
@@ -114,26 +106,38 @@ export default function ContactSection() {
         </div>
         <div className="contact_right flex-2 ">
           <form
-            action={contactActionState}
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            target="_blank"
             className="contact_form  flex flex-col "
           >
             <div className="flex flex-col md:flex-row   justify-between gap-6">
               <div className="flex flex-1 flex-col">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="9f39d837-59b2-4908-9c18-1522fd35c672"
+                ></input>
                 <label htmlFor="username">Name</label>
                 <input
                   className="font-semibold tracking-wide"
                   type="text"
-                  name="username"
+                  name="name"
                   placeholder="Your Name"
+                  required
+                  minLength={2}
+                  maxLength={25}
                 />
               </div>
               <div className="flex flex-1 flex-col">
                 <label htmlFor="email">Email</label>
                 <input
                   className="font-semibold tracking-wide"
-                  type="text"
+                  type="email"
                   name="email"
                   placeholder="your.email@gmail.com"
+                  maxLength={100}
+                  required
                 />
               </div>
             </div>
@@ -146,6 +150,7 @@ export default function ContactSection() {
               type="text"
               name="subject"
               placeholder="Project inquery"
+              required
             />
             <label className="mt-4" htmlFor="Message">
               Message
@@ -155,8 +160,11 @@ export default function ContactSection() {
               name="message"
               id="message"
               rows={8}
+              required
               placeholder="Tell me about your project..."
+              minLength={10}
             ></textarea>
+
             <button
               type="submit"
               className="px-8 py-4  w-fit font-semibold rounded-lg mt-8 bg-lightblue  hover:bg-darkblue duration-300 cursor-pointer"
