@@ -68,7 +68,7 @@ export default function HeroSection() {
         <div className="buttons flex gap-6">
           <Link href="#connect_section">
             <motion.button
-              className="text-white text-lg bg-gradient-to-r from-lightblue to-darkblue animate-pulse cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
+              className="text-white text-lg bg-gradient-to-r from-lightblue to-darkblue animate-pulse hover:animate-none hover:scale-95 duration-300 cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
               initial={{ opacity: 0, y: initialY }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration, ease: "easeOut", delay: 0.3 }}
@@ -78,7 +78,7 @@ export default function HeroSection() {
           </Link>
           <Link href="#projects_section">
             <motion.button
-              className="text-white text-lg bg-lightgray-opacity-2 animate-pulse cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
+              className="text-white text-lg bg-lightgray-opacity-2 animate-pulse hover:animate-none hover:scale-95 duration-300 cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
               initial={{ opacity: 0, y: initialY }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration, ease: "easeOut", delay: 0.4 }}

@@ -9,7 +9,7 @@ export default function Navbar() {
   return (
     <motion.nav
       id="navbar"
-      className="navbar  bg-background-primary text-white flex justify-between items-center py-2 mx-auto w-[96%] max-w-[1400px]"
+      className="navbar  relative overflow-visible  text-white flex justify-between items-center py-2 mx-auto w-[96%] max-w-[1400px]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
@@ -44,7 +44,7 @@ export default function Navbar() {
 
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden flex flex-col gap-1"
+        className="md:hidden flex flex-col gap-1 cursor-pointer z-50 hover:opacity-80"
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
@@ -66,27 +66,72 @@ export default function Navbar() {
       </button>
 
       {/* Mobile Menu */}
+
       {isOpen && (
-        <div className="md:hidden absolute top-0 z-100 left-0 right-0 bg-black/95 flex flex-col gap-4 font-semibold p-6 mt-2">
-          <Link href="/" onClick={() => setIsOpen(false)}>
-            Home
-          </Link>
-          <Link href="/about" onClick={() => setIsOpen(false)}>
-            Skills
-          </Link>
-          <Link href="/projects" onClick={() => setIsOpen(false)}>
-            Projects
-          </Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)}>
-            Pricing
-          </Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)}>
-            Testimonials
-          </Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)}>
-            Contact
-          </Link>
-        </div>
+        <>
+          <motion.div
+            className="blur_bg md:hidden fixed inset-0 bg-black/40 backdrop-blur-[1px] z-40"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            onClick={() => setIsOpen(false)}
+            aria-hidden="true"
+          />
+          <motion.div
+            className="menu_section md:hidden absolute right-0 top-full w-[50%] sm:w-[40%] p-2 bg-lightgray/30 backdrop-blur-2xl border-1 border-white/80 z-50 flex flex-col gap-2  font-semibold rounded-md "
+            initial={{ opacity: 0, y: -100, scale: 0.5 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+          >
+            <Link
+              href="/"
+              className="block px-3 py-2 rounded-md hover:bg-lightgray/50 hover:opacity-80"
+              onClick={() => setIsOpen(false)}
+            >
+              Home
+            </Link>
+            <hr className="opacity-50" />
+            <Link
+              href="/about"
+              className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
+              onClick={() => setIsOpen(false)}
+            >
+              Skills
+            </Link>{" "}
+            <hr className="opacity-50" />
+            <Link
+              href="/projects"
+              className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
+              onClick={() => setIsOpen(false)}
+            >
+              Projects
+            </Link>{" "}
+            <hr className="opacity-50" />
+            <Link
+              href="/contact"
+              className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
+              onClick={() => setIsOpen(false)}
+            >
+              Pricing
+            </Link>{" "}
+            <hr className="opacity-50" />
+            <Link
+              href="/contact"
+              className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
+              onClick={() => setIsOpen(false)}
+            >
+              Testimonials
+            </Link>{" "}
+            <hr className="opacity-50" />
+            <Link
+              href="/contact"
+              className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </Link>
+          </motion.div>
+        </>
       )}
     </motion.nav>
   );

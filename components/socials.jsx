@@ -89,27 +89,6 @@ export default function SocialsSection() {
           <div className="social_media flex flex-col gap-4">
             <p className="text-lightgray tracking-wide text-lg">Social Media</p>
             <div className="social_links animate-pulse hover:animate-none flex gap-4">
-              {/* <Link
-                href="mailto:nafizmahmud102@gmail.com"
-                className="bg-lightgray-opacity-2 hover:text-lightblue border  border-lightblue rounded-md p-2 text-3xl"
-              >
-                <svg
-                  fill="none"
-                  strokeWidth="0"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  height="1em"
-                  width="1em"
-                  style={{ overflow: "visible", color: "currentcolor" }}
-                >
-                  <path
-                    fill="currentColor"
-                    fillRule="evenodd"
-                    d="M3.01 5.838a1 1 0 0 1 1-1H20a1 1 0 0 1 1 1v11.324a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-11c0-.048.003-.094.01-.14v-.184ZM5 8.062v9.1h14v-9.1l-4.879 4.879a3 3 0 0 1-4.242 0L5 8.06Zm1.572-1.256h10.856l-4.72 4.72a1 1 0 0 1-1.415 0l-4.72-4.72Z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </Link> */}
               <Link
                 href="https://x.com/nafiz_mahmud_99"
                 target="_blank"
@@ -200,10 +179,10 @@ export default function SocialsSection() {
         transition={{ duration: 0.5, ease: "easeOut", delay: 0.2 }}
         viewport={{ once: true, margin: "0px 0px -150px 0px" }}
       >
-        <div className="cards flex items-center justify-between">
+        <div className="cards  flex items-center justify-between">
           <div className="card">
             <h2 className="text-4xl text-lightblue font-bold">20+</h2>
-            <p className="text-md xl:text-lg text-lightgray font-medium">
+            <p className="text-lg xl:text-xl text-lightgray font-medium">
               Projects Completed
             </p>
           </div>

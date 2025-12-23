@@ -26,9 +26,8 @@ export default function ProjectsSection() {
     },
   ];
   return (
-    <div className="projects_section  mb-48">
+    <div className="projects_section mb-48" id="projects_section">
       <motion.h2
-        id="projects_section"
         className="text-3xl text-white text-center font-bold tracking-wide"
         initial={{ y: 40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
