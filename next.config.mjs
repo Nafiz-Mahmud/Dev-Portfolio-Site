@@ -1,8 +1,7 @@
-/** @type {import('next-sitemap').IConfig} */
-const config = {
-  siteUrl: "https://dev-portfolio-site-five.vercel.app",
-  generateRobotsTxt: true,
-  outDir: "out",
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  /* config options here */
+  reactCompiler: true,
 };
 
-export default config;
+export default nextConfig;
