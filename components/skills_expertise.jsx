@@ -2,10 +2,10 @@
 import { motion } from "motion/react";
 export default function SkillsExpertiseSection() {
   return (
-    <div className="skills_expertise_section  text-white  my-12 pt-24 pb-40  bg-linear-to-b from-background-transparent  via-background-secondary to-background-transparent">
+    <div className="skills_expertise_section  text-white  my-12 pt-18 pb-40  bg-linear-to-b from-background-transparent  via-background-secondary to-background-transparent">
       <motion.h2
         id="skills_expertise_section"
-        className="text-3xl text-center font-bold tracking-wide"
+        className="text-3xl text-center pt-18 font-bold tracking-wide"
         initial={{ y: 40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, ease: "easeOut" }}

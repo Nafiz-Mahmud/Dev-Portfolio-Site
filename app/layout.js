@@ -32,9 +32,8 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={tomorrow.className}>
         <Navbar />
-        <hr className="text-lightblue max-w-[1400px] mx-auto" />
+        <hr className="bg-lightblue h-[0.1rem]" />
         {children}
-
         <FooterSection />
       </body>
     </html>

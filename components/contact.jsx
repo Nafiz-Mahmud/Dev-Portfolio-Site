@@ -260,7 +260,7 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="px-8 py-4  w-fit font-semibold rounded-lg mt-8 bg-lightblue  hover:bg-darkblue duration-300 cursor-pointer"
+              className="px-8 py-4  w-fit font-semibold rounded-lg mt-8 bg-lightblue  hover:bg-darkblue hover:scale-95 duration-300 cursor-pointer"
             >
               Send Message
             </button>

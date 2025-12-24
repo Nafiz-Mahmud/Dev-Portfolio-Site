@@ -88,9 +88,9 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-
+      {/* mobile img */}
       <motion.div
-        className="hero_img_section flex-1 flex items-center lg:pr-[4rem] relative sm:block lg:hidden"
+        className="hero_img_section flex-1 flex items-center relative sm:block lg:hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
@@ -106,14 +106,13 @@ export default function HeroSection() {
             alt="hero"
             fill={true}
             priority={true}
-            // quality={100}
-            // className="opacity-5"
             className="opacity-100"
           />
         </div>
       </motion.div>
+      {/* Desktop view  */}
       <motion.div
-        className="hero_img_section flex-1 flex items-center lg:pr-[4rem] relative hidden lg:block"
+        className="hero_img_section flex-1 flex items-center lg:pr-[1.5rem] relative hidden lg:block"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
@@ -129,8 +128,6 @@ export default function HeroSection() {
             alt="hero"
             fill={true}
             priority={true}
-            // quality={100}
-            // className="opacity-5"
             className="opacity-100"
           />
         </div>
