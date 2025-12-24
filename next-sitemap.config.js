@@ -1,5 +1,15 @@
-// next-sitemap.config.js
+/** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://yourname.vercel.app",
-  generateRobotsTxt: true, // ← Must be true!
+  siteUrl: "https://nafizdev.appwrite.network/",
+  generateRobotsTxt: true,
+  sitemapSize: 5000,
+
+  changefreq: "weekly",
+  priority: 0.7,
+
+  exclude: ["/admin/*", "/private/*"],
+
+  robotsTxtOptions: {
+    policies: [{ userAgent: "*", allow: "/" }],
+  },
 };
