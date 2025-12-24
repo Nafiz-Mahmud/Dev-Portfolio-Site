@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://nafizdev.appwrite.network/",
+  siteUrl: "https://dev-portfolio-site-five.vercel.app",
   generateRobotsTxt: true,
   sitemapSize: 5000,
 
