@@ -79,7 +79,7 @@ export default function Navbar() {
           />
           <motion.div
             className="menu_section md:hidden absolute right-0 top-full w-[50%] sm:w-[40%] p-2 bg-lightgray/30 backdrop-blur-2xl border-1 border-white/80 z-50 flex flex-col gap-2  font-semibold rounded-md "
-            initial={{ opacity: 0, y: -100, scale: 0.5 }}
+            initial={{ opacity: 0, y: -50, scale: 0.8 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
           >

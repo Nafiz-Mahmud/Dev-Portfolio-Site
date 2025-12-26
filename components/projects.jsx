@@ -1,28 +1,32 @@
 "use client";
 import { motion } from "motion/react";
+import Link from "next/link";
 import Image from "next/image";
 export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
       img: "/project_one.png",
-      title: "E-Commerce Platform",
-      desc: "A full-featured online shopping platform with payment intregration, inventory management, and admin dashboard.",
-      tags: ["React", "Tailwind", "Node.js", "Postgresql"],
+      title: "Wellhall - Resort & Spa Hotel",
+      desc: "A full-featured online booking platform for Wellhall - resort & spa hotel.",
+      tags: ["React", "Tailwind", "TypeScript", "SEO"],
+      link: "https://wellhall-resort-next-tailwind.vercel.app",
     },
     {
       id: 2,
       img: "/project_two.jpg",
-      title: "Task Management App",
-      desc: "Collaborative project management tool with real-time updates, team collaboration, and progress tracking.",
-      tags: ["Next.js", "TypeScript", "MongoDB", "WebSockets"],
+      title: "Manreka Accounting",
+      desc: "A real-time collaborative accounting web application for a small business.",
+      tags: ["Next.js", "TypeScript", "Tailwind"],
+      link: "https://manreka-accounting-solid-tailwind-frontend.vercel.app",
     },
     {
       id: 3,
       img: "/project_three.avif",
-      title: "Fitness Tracking App",
-      desc: "Cross-platform mobile app for tracking workouts, nutrition, and fitness goals with social features.",
-      tags: ["React Native", "Firebase", "Redux", "Chart.js"],
+      title: "Mind Zen - Blogging Platform",
+      desc: "A modern blogging platform that allows users to create, share, and discover articles on various topics.",
+      tags: ["TypeScript", "Tailwind", "Next.js"],
+      link: "https://mind-zen.vercel.app",
     },
   ];
   return (
@@ -113,7 +117,13 @@ export default function ProjectsSection() {
                     <path d="M10 14 21 3"></path>
                   </svg>
 
-                  <p className="text-lg">Live Demo</p>
+                  <Link
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <p className="text-lg">Live Demo</p>
+                  </Link>
                 </div>
               </div>
             </div>
