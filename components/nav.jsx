@@ -17,7 +17,7 @@ export default function Navbar() {
       <Link href="/">
         <div className="title hover:opacity-80 cursor-pointer flex gap-2 items-center">
           <Image src="/devlogo.png" alt="logo" width={50} height={50} />
-          <h1 className="text-2xl font-bold">Dev Portfolio</h1>
+          <h2 className="text-2xl font-bold">Dev Portfolio</h2>
         </div>
       </Link>
 

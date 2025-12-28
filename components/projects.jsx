@@ -6,27 +6,27 @@ export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      img: "/project_one.png",
+      img: "/project_first.png",
+      title: "Starlab Marketing",
+      desc: "A full-featured platform for people to understand marketing.",
+      tags: ["React", "Tailwind", "TypeScript", "SEO"],
+      link: "https://starlab.vercel.app",
+    },
+    {
+      id: 2,
+      img: "/project_second.png",
       title: "Wellhall - Resort & Spa Hotel",
       desc: "A full-featured online booking platform for Wellhall - resort & spa hotel.",
       tags: ["React", "Tailwind", "TypeScript", "SEO"],
       link: "https://wellhall-resort-next-tailwind.vercel.app",
     },
     {
-      id: 2,
-      img: "/project_two.jpg",
+      id: 3,
+      img: "/project_third.png",
       title: "Manreka Accounting",
       desc: "A real-time collaborative accounting web application for a small business.",
       tags: ["Next.js", "TypeScript", "Tailwind"],
       link: "https://manreka-accounting-solid-tailwind-frontend.vercel.app",
-    },
-    {
-      id: 3,
-      img: "/project_three.avif",
-      title: "Mind Zen - Blogging Platform",
-      desc: "A modern blogging platform that allows users to create, share, and discover articles on various topics.",
-      tags: ["TypeScript", "Tailwind", "Next.js"],
-      link: "https://mind-zen.vercel.app",
     },
   ];
   return (
@@ -53,19 +53,25 @@ export default function ProjectsSection() {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            className="project_card flex-1 overflow-hidden text-white rounded-lg border-1 border-lightgray-opacity-2 bg-lightgray-opacity-1"
+            className="project_card hover:shadow-lightblue hover:shadow-sm duration-200 flex-1 overflow-hidden text-white rounded-lg border-1 border-lightgray-opacity-2 bg-lightgray-opacity-1"
             initial={{ y: 40, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.2 }}
             viewport={{ once: true, margin: "0px 0px -100px 0px" }}
           >
-            <div className="project_img_container  h-[13rem] w-full relative overflow-hidden">
-              <Image
-                className="object-cover object-center"
-                src={project.img}
-                alt="/"
-                fill={true}
-              />
+            <div className="project_img_container hover:scale-105 duration-300  h-[13rem] w-full relative overflow-hidden">
+              <Link
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className="object-cover object-center"
+                  src={project.img}
+                  alt="/"
+                  fill={true}
+                />
+              </Link>
             </div>
             <div className="project-texts flex flex-col gap-4 px-4 py-6">
               <h2 className="text-xl font-semibold">{project.title}</h2>

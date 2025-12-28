@@ -26,7 +26,7 @@ export default function HeroSection() {
             Available for freelance work
           </p>
         </motion.div>
-        <motion.h1
+        <motion.h2
           className="text-white tracking-wide text-3xl lg:text-4xl font-bold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,9 +50,9 @@ export default function HeroSection() {
           >
             Nafiz Mahmud
           </motion.span>
-        </motion.h1>
+        </motion.h2>
 
-        <motion.p
+        <motion.h1
           className="text-lightgray text-center lg:text-left tracking-wide text-md lg:text-lg font-semibold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
@@ -64,11 +64,11 @@ export default function HeroSection() {
           </span>{" "}
           specializing in crafting beautiful, functional and user-friendly
           digital web experiences with modern web technologies.
-        </motion.p>
+        </motion.h1>
         <div className="buttons flex gap-6">
           <Link href="#connect_section">
             <motion.button
-              className="text-white text-lg bg-gradient-to-r from-lightblue to-darkblue animate-pulse hover:animate-none hover:scale-95 duration-300 cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
+              className="text-white text-lg bg-gradient-to-r from-lightblue to-darkblue animate-pulse hover:animate-none hover:scale-95  cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
               initial={{ opacity: 0, y: initialY }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration, ease: "easeOut", delay: 0.3 }}
@@ -78,7 +78,7 @@ export default function HeroSection() {
           </Link>
           <Link href="#projects_section">
             <motion.button
-              className="text-white text-lg bg-lightgray-opacity-2 animate-pulse hover:animate-none hover:scale-95 duration-300 cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
+              className="text-white text-lg bg-lightgray-opacity-2 animate-pulse hover:animate-none hover:scale-95 cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"
               initial={{ opacity: 0, y: initialY }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration, ease: "easeOut", delay: 0.4 }}
