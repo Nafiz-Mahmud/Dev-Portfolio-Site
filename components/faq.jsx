@@ -76,13 +76,13 @@ export default function FAQSection() {
         questions I receive about my services.
       </motion.p>
 
-      <div className=" max-w-[80%] mx-auto pt-24 pb-10">
+      <div className=" max-w-[96%] sm:max-w-[80%] mx-auto pt-24 pb-10">
         <div className="space-y-3">
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
               onClick={() => toggleFAQ(index)}
-              className=" bg-lightgray-opacity-1  cursor-pointer rounded-xl p-4"
+              className=" bg-lightgray-opacity-1   cursor-pointer rounded-xl p-4"
               initial={{ y: 20, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1 }}
               transition={{

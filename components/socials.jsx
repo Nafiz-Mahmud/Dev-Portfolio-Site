@@ -19,7 +19,7 @@ export default function SocialsSection() {
         <div className="email_phone   py-2 ">
           <div className="email_section    flex items-center  gap-3">
             <svg
-              className="h-[1.5rem] w-[1.5rem] mt-[0.5rem]"
+              className="h-[1rem] w-[1rem] sm:h-[1.5rem] sm:w-[1.5rem] mt-[.25rem] sm:mt-[0.5rem]"
               // width="200"
               // height="200"
               xmlns="http://www.w3.org/2000/svg"
@@ -34,14 +34,14 @@ export default function SocialsSection() {
               href="mailto:nafizmahmud102@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="tracking-wide hover:text-lightblue font-semibold text-lg underline  w-fit"
+              className="tracking-wide hover:text-lightblue font-semibold text-sm sm:text-lg underline  w-fit"
             >
               nafizmahmud102@gmail.com
             </Link>
           </div>
           <div className="phone_section   flex items-center  gap-3">
             <svg
-              className="h-[1.7rem] w-[1.7rem] mt-[0.5rem]"
+              className="h-[1.2rem] w-[1.2rem] sm:h-[1.7rem] sm:w-[1.7rem] mt-[.25rem] sm:mt-[0.5rem]"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
               y="0px"
@@ -76,7 +76,7 @@ export default function SocialsSection() {
               href="https://wa.me/8801703876066"
               target="_blank"
               rel="noopener noreferrer"
-              className="tracking-wide hover:text-lightblue font-semibold text-lg underline w-fit "
+              className="tracking-wide hover:text-lightblue font-semibold text-sm sm:text-lg underline w-fit "
             >
               (+88) 017-03876066
             </Link>
@@ -87,7 +87,9 @@ export default function SocialsSection() {
         </p>
         <div className="links_section  flex  gap-14">
           <div className="social_media flex flex-col gap-4">
-            <p className="text-lightgray tracking-wide text-lg">Social Media</p>
+            <p className="text-lightgray tracking-wide text-sm sm:text-lg">
+              Social Media
+            </p>
             <div className="social_links animate-pulse hover:animate-none flex gap-4">
               <Link
                 href="https://x.com/nafiz_mahmud_99"
@@ -130,7 +132,7 @@ export default function SocialsSection() {
             </div>
           </div>
           <div className="freelance_sites flex flex-col gap-4 ">
-            <p className="text-lightgray tracking-wide   text-lg ">
+            <p className="text-lightgray tracking-wide  text-sm sm:text-lg ">
               Freelance Sites
             </p>
             <div className="freelance_links animate-pulse hover:animate-none flex gap-4">
@@ -182,19 +184,19 @@ export default function SocialsSection() {
         <div className="cards  flex items-center justify-between">
           <div className="card">
             <h2 className="text-4xl text-lightblue font-bold">20+</h2>
-            <p className="text-lg xl:text-xl text-lightgray font-medium">
+            <p className="text-sm sm:text-lg xl:text-xl text-lightgray font-medium">
               Projects Completed
             </p>
           </div>
           <div className="card">
             <h2 className="text-4xl text-lightblue font-bold">3+</h2>
-            <p className="text-lg xl:text-xl text-lightgray font-medium">
+            <p className="text-sm sm:text-lg xl:text-xl text-lightgray font-medium">
               Years Experience
             </p>
           </div>
           <div className="card">
             <h2 className="text-4xl text-lightblue font-bold">15+</h2>
-            <p className="text-lg xl:text-xl text-lightgray font-medium">
+            <p className="text-sm sm:text-lg xl:text-xl text-lightgray font-medium">
               Happy Clients
             </p>
           </div>

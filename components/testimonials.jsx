@@ -44,7 +44,7 @@ export default function TestimonialSection() {
       >
         Don't just take my word for it - hear from satisfied clients
       </motion.p>
-      <div className="client_cards py-24 grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))]  justify-between gap-8">
+      <div className="client_cards py-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))]  justify-between gap-8">
         {clientsTestimonials.map((each_client, index) => (
           <motion.div
             className="card rounded-xl p-4 flex flex-col gap-2 items-start bg-lightgray-opacity-1 border-1 border-lightgray-opacity-2"

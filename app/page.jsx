@@ -11,7 +11,7 @@ import ViewportSize from "@/components/viewport";
 export default function Home() {
   return (
     <div className="homepage  max-w-[1400px] w-[96%] mx-auto">
-      <ViewportSize />
+      {/* <ViewportSize /> */}
 
       <HeroSection />
       <SocialsSection />

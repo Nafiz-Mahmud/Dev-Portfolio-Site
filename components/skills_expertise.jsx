@@ -22,7 +22,7 @@ export default function SkillsExpertiseSection() {
       >
         Delivering excellence through modern technologies and best practices
       </motion.p>
-      <div className="skill_cards px-5 grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-4 mt-12">
+      <div className="skill_cards px-5 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-4 mt-12">
         <motion.div
           className="card border-1 border-lightgray frontend flex flex-col gap-2 bg-lightgray-opacity-2  p-4 rounded-lg"
           initial={{ y: 40, opacity: 0 }}

@@ -119,7 +119,7 @@ export default function FooterSection() {
         </div>
       </div>
 
-      <p className="text-md lg:text-xl  py-10 mb-6 rounded-lg bg-lightgray-opacity-1 text-lightgray font-semibold mt-10 text-center">
+      <p className="text-sm sm:text-md lg:text-xl  py-10 mb-6 rounded-lg bg-lightgray-opacity-1 text-lightgray font-semibold mt-10 text-center">
         &copy; {year} Nafiz Mahmud. All rights reserved.
       </p>
     </footer>

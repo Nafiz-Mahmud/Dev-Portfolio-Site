@@ -22,12 +22,12 @@ export default function HeroSection() {
               .
             </span>
           </span>
-          <p className=" text-lightblue font-semibold">
+          <p className="text-lightblue text-sm sm:text-md lg:text-lg font-semibold">
             Available for freelance work
           </p>
         </motion.div>
         <motion.h2
-          className="text-white tracking-wide text-3xl lg:text-4xl font-bold"
+          className="text-white  sm:tracking-wide text-2xl sm:text-3xl lg:text-4xl font-bold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration, ease: "easeOut", delay: 0.1 }}
@@ -53,7 +53,7 @@ export default function HeroSection() {
         </motion.h2>
 
         <motion.h1
-          className="text-lightgray text-center lg:text-left tracking-wide text-md lg:text-lg font-semibold"
+          className="text-lightgray text-center lg:text-left tracking-wide  sm:text-md lg:text-lg font-semibold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration, ease: "easeOut", delay: 0.2 }}
@@ -65,7 +65,7 @@ export default function HeroSection() {
           specializing in crafting beautiful, functional and user-friendly
           digital web experiences with modern web technologies.
         </motion.h1>
-        <div className="buttons flex gap-6">
+        <div className="buttons flex flex-col items-center sm:flex-row gap-6">
           <Link href="#connect_section">
             <motion.button
               className="text-white text-lg bg-gradient-to-r from-lightblue to-darkblue animate-pulse hover:animate-none hover:scale-95  cursor-pointer tracking-wide border-1 border-lightblue w-fit py-2 px-4 rounded-md text-lightblue font-semibold"

@@ -49,7 +49,7 @@ export default function ProjectsSection() {
       >
         A showcase of my recent work and personal projects
       </motion.p>
-      <div className="project_cards mt-20 grid grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] justify-between gap-6 ">
+      <div className="project_cards mt-20 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] justify-between gap-6 ">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}

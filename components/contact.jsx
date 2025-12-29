@@ -108,7 +108,7 @@ export default function ContactSection() {
             <div className="socials_card border-2 border-lightgray-opacity-2 bg-lightgray-opacity-1 w-full p-6 rounded-2xl">
               <div className="socials_info flex justify-between items-center">
                 <div className="social_media flex flex-col gap-4">
-                  <p className="text-white font-bold tracking-wide  text-lg  lg:text-md">
+                  <p className="text-white font-bold tracking-wide text-sm sm:text-xl">
                     Social Media
                   </p>
                   <div className="social_links animate-pulse hover:animate-none flex gap-4">
@@ -153,7 +153,7 @@ export default function ContactSection() {
                   </div>
                 </div>
                 <div className="freelance_sites flex flex-col gap-4 ">
-                  <p className="text-white font-bold tracking-wide   text-lg  lg:text-md ">
+                  <p className="text-white font-bold tracking-wide   text-sm sm:text-xl ">
                     Freelance Sites
                   </p>
                   <div className="freelance_links animate-pulse hover:animate-none flex gap-4">
@@ -260,7 +260,7 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="px-8 py-4  w-fit font-semibold rounded-lg mt-8 bg-lightblue  hover:bg-darkblue hover:scale-95 duration-300 cursor-pointer"
+              className="px-4 py-2 sm:px-8 sm:py-4  w-fit font-semibold rounded-lg mt-8 bg-lightblue  hover:bg-darkblue hover:scale-95 duration-300 cursor-pointer"
             >
               Send Message
             </button>
