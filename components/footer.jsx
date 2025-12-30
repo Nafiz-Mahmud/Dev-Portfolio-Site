@@ -8,7 +8,12 @@ export default function FooterSection() {
         <div className="footer_left flex-2 flex flex-col gap-4">
           <div className="flex items-center gap-4">
             <div className="img_container">
-              <Image src="/devlogo.png" alt="logo" width={40} height={40} />
+              <Image
+                src="/devlogo.png"
+                alt="Nafiz M. - Web developer logo"
+                width={40}
+                height={40}
+              />
             </div>
             <h2 className="text-white text-2xl font-semibold">Dev Portfolio</h2>
           </div>

@@ -13,7 +13,7 @@ export default function SkillsExpertiseSection() {
       >
         Skills & Expertise
       </motion.h2>
-      <motion.p
+      <motion.h3
         className="text-md text-lightgray text-center font-semibold tracking-wide p-6"
         initial={{ y: 40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -21,7 +21,7 @@ export default function SkillsExpertiseSection() {
         viewport={{ once: true, margin: "0px 0px -100px 0px" }}
       >
         Delivering excellence through modern technologies and best practices
-      </motion.p>
+      </motion.h3>
       <div className="skill_cards px-5 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] gap-4 mt-12">
         <motion.div
           className="card border-1 border-lightgray frontend flex flex-col gap-2 bg-lightgray-opacity-2  p-4 rounded-lg"

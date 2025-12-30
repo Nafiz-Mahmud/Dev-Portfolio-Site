@@ -35,7 +35,7 @@ export default function TestimonialSection() {
       >
         Client Testimonials
       </motion.h2>
-      <motion.p
+      <motion.h3
         className="text-md text-lightgray text-center font-semibold tracking-wide p-6"
         initial={{ y: 40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -43,7 +43,7 @@ export default function TestimonialSection() {
         viewport={{ once: true, margin: "0px 0px -100px 0px" }}
       >
         Don't just take my word for it - hear from satisfied clients
-      </motion.p>
+      </motion.h3>
       <div className="client_cards py-24 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))]  justify-between gap-8">
         {clientsTestimonials.map((each_client, index) => (
           <motion.div

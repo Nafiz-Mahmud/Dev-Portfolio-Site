@@ -17,10 +17,10 @@ export default function ContactSection() {
       >
         Get In Touch
       </h2>
-      <p className="text-md text-lightgray text-center font-semibold tracking-wide p-6">
+      <h3 className="text-md text-lightgray text-center font-semibold tracking-wide p-6">
         Have a project in mind? Let's discuss how I can help bring your ideas to
         life.
-      </p>
+      </h3>
       <div className="flex flex-col lg:flex-row gap-8 mt-16 mb-20">
         <div className="contact_left flex-1">
           <div className="contact_info  flex flex-col  lg:flex-col  gap-6">

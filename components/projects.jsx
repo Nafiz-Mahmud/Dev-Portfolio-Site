@@ -7,6 +7,7 @@ export default function ProjectsSection() {
     {
       id: 1,
       img: "/project_first.png",
+      alt: "Starlab Marketing web application - platform for understanding marketing",
       title: "Starlab Marketing",
       desc: "A full-featured platform for people to understand marketing.",
       tags: ["React", "Tailwind", "TypeScript", "SEO"],
@@ -15,6 +16,7 @@ export default function ProjectsSection() {
     {
       id: 2,
       img: "/project_second.png",
+      alt: "Wellhall Resort & Spa Hotel booking platform web application",
       title: "Wellhall - Resort & Spa Hotel",
       desc: "A full-featured online booking platform for Wellhall - resort & spa hotel.",
       tags: ["React", "Tailwind", "TypeScript", "SEO"],
@@ -23,6 +25,7 @@ export default function ProjectsSection() {
     {
       id: 3,
       img: "/project_third.png",
+      alt: "Manreka Accounting web application - real-time collaborative accounting for small business",
       title: "Manreka Accounting",
       desc: "A real-time collaborative accounting web application for a small business.",
       tags: ["Next.js", "TypeScript", "Tailwind"],
@@ -40,7 +43,7 @@ export default function ProjectsSection() {
       >
         Featured Projects
       </motion.h2>
-      <motion.p
+      <motion.h3
         className="text-md text-lightgray text-center font-semibold tracking-wide p-6"
         initial={{ y: 40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -48,7 +51,7 @@ export default function ProjectsSection() {
         viewport={{ once: true, margin: "0px 0px -100px 0px" }}
       >
         A showcase of my recent work and personal projects
-      </motion.p>
+      </motion.h3>
       <div className="project_cards mt-20 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] justify-between gap-6 ">
         {projects.map((project, index) => (
           <motion.div

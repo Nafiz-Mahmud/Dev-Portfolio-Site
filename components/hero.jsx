@@ -17,16 +17,17 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration, ease: "easeOut" }}
         >
-          <span className="h-4 w-4 bg-lightblue rounded-full relative">
-            <span className="h-4 w-4 bg-lightblue rounded-full animate-ping absolute top-0 left-0 z-1">
-              .
-            </span>
+          <span
+            aria-hidden="true"
+            className="h-4 w-4 bg-lightblue rounded-full relative"
+          >
+            <span className="h-4 w-4 bg-lightblue rounded-full animate-ping absolute top-0 left-0 z-1"></span>
           </span>
           <p className="text-lightblue text-sm sm:text-md lg:text-lg font-semibold">
             Available for freelance work
           </p>
         </motion.div>
-        <motion.h2
+        <motion.p
           className="text-white  sm:tracking-wide text-2xl sm:text-3xl lg:text-4xl font-bold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,21 +51,23 @@ export default function HeroSection() {
           >
             Nafiz Mahmud
           </motion.span>
-        </motion.h2>
-
-        <motion.h1
+        </motion.p>
+        <motion.h1 className="text-white text-center lg:text-left sm:text-md lg:text-lg font-semibold">
+          Freelance{" "}
+          <span className="text-lightblue font-bold">
+            Full-Stack Web Developer
+          </span>{" "}
+          Creating Fast, SEO-Optimized Websites & Web Applications.
+        </motion.h1>
+        <motion.p
           className="text-lightgray text-center lg:text-left tracking-wide  sm:text-md lg:text-lg font-semibold"
           initial={{ opacity: 0, y: initialY }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration, ease: "easeOut", delay: 0.2 }}
         >
-          A passionate{" "}
-          <span className="text-lightblue font-bold">
-            Full-Stack Web Developer
-          </span>{" "}
-          specializing in crafting beautiful, functional and user-friendly
-          digital web experiences with modern web technologies.
-        </motion.h1>
+          I develop beautiful, functional, and user-friendly digital experiences
+          using modern web technologies like Next.js and React.
+        </motion.p>
         <div className="buttons flex flex-col items-center sm:flex-row gap-6">
           <Link href="#connect_section">
             <motion.button
@@ -125,7 +128,7 @@ export default function HeroSection() {
         <div className="img_container   lg:h-[400px] lg:w-[400px] h-[300px] w-[300px] relative rounded-2xl overflow-hidden">
           <Image
             src="/hero_img.png"
-            alt="hero"
+            alt="Portrait of Nafiz, freelance web developer"
             fill={true}
             priority={true}
             className="opacity-100"

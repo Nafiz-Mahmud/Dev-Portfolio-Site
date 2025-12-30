@@ -65,7 +65,7 @@ export default function FAQSection() {
       >
         Frequently Asked Questions
       </motion.h2>
-      <motion.p
+      <motion.h3
         className="text-md text-lightgray text-center font-semibold tracking-wide p-6"
         initial={{ y: 40, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -74,7 +74,7 @@ export default function FAQSection() {
       >
         Got questions? I've got answers. Here are some of the most common
         questions I receive about my services.
-      </motion.p>
+      </motion.h3>
 
       <div className=" max-w-[96%] sm:max-w-[80%] mx-auto pt-24 pb-10">
         <div className="space-y-3">

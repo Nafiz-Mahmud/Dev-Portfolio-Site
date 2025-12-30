@@ -16,7 +16,12 @@ export default function Navbar() {
     >
       <Link href="/">
         <div className="title hover:opacity-80 cursor-pointer flex gap-2 items-center">
-          <Image src="/devlogo.png" alt="logo" width={50} height={50} />
+          <Image
+            src="/devlogo.png"
+            alt="Nafiz M. - Web developer logo"
+            width={50}
+            height={50}
+          />
           <h2 className="text-2xl font-bold">Dev Portfolio</h2>
         </div>
       </Link>
@@ -92,7 +97,7 @@ export default function Navbar() {
             </Link>
             <hr className="opacity-50" />
             <Link
-              href="/about"
+              href="#skills_expertise_section"
               className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
               onClick={() => setIsOpen(false)}
             >
@@ -100,23 +105,23 @@ export default function Navbar() {
             </Link>{" "}
             <hr className="opacity-50" />
             <Link
-              href="/projects"
+              href="#projects_section"
               className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </Link>{" "}
             <hr className="opacity-50" />
-            <Link
+            {/* <Link
               href="/contact"
               className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
               onClick={() => setIsOpen(false)}
             >
               Pricing
-            </Link>{" "}
-            <hr className="opacity-50" />
+            </Link> */}
+            {/* <hr className="opacity-50" /> */}
             <Link
-              href="/contact"
+              href="#testimonials_section"
               className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
               onClick={() => setIsOpen(false)}
             >
@@ -124,7 +129,7 @@ export default function Navbar() {
             </Link>{" "}
             <hr className="opacity-50" />
             <Link
-              href="/contact"
+              href="#contact_section"
               className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
               onClick={() => setIsOpen(false)}
             >
