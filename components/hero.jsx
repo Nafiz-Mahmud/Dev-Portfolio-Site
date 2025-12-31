@@ -52,7 +52,12 @@ export default function HeroSection() {
             Nafiz Mahmud
           </motion.span>
         </motion.p>
-        <motion.h1 className="text-white text-center lg:text-left sm:text-md lg:text-lg font-semibold">
+        <motion.h1
+          className="text-white text-center lg:text-left sm:text-md lg:text-lg font-semibold"
+          initial={{ opacity: 0, y: initialY }}
+          animate={{ opacity: 0.9, y: 0 }}
+          transition={{ duration, ease: "easeOut", delay: 0.2 }}
+        >
           Freelance{" "}
           <span className="text-lightblue font-bold">
             Full-Stack Web Developer

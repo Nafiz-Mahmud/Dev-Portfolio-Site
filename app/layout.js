@@ -1,13 +1,9 @@
-import { Geist, Tomorrow } from "next/font/google";
+import { Tomorrow } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
 import Navbar from "@/components/nav.jsx";
 import FooterSection from "@/components/footer";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const tomorrow = Tomorrow({
   variable: "--font-tomorrow",
@@ -29,6 +25,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google analytics ID  */}
+        <GoogleAnalytics gaId="G-VFXW1N0GH4" />
         {/* Google Search Console Verification Meta Tag */}
         <meta
           name="google-site-verification"
