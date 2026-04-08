@@ -70,8 +70,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration, ease: "easeOut", delay: 0.2 }}
         >
-          I develop beautiful, functional, and user-friendly digital experiences
-          using modern web technologies like Next.js and React.
+          I Build fast, value-driven websites for Startups & Businesses using
+          React, Next.js, & Framer.
         </motion.p>
         <div className="buttons flex flex-col items-center sm:flex-row gap-6">
           <Link href="#connect_section">
