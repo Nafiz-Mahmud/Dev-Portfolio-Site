@@ -9,7 +9,8 @@ export default function StructuredData() {
           "@type": "Person",
           name: "Nafiz Mahmud",
           jobTitle: "Freelance Full-Stack Web Developer",
-          url: "https://nafizdev.appwrite.network",
+          url: "https://nafizdevportfolio.vercel.app",
+
           sameAs: [
             "https://x.com/nafiz_mahmud_99",
             "https://www.linkedin.com/in/nafiz-mahmud-603063226/",

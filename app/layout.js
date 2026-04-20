@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
         {/* Google Search Console Verification Meta Tag */}
         <meta
           name="google-site-verification"
-          content="E74slFEf9_H4tspaJzKGy5XvMHwrCsKTtNj5tAtr5CI"
+          content="ALqUo0ZH2OTfDtjg8SH8Rr6uR8h60KZeE9rhBnXW9EI"
         />
         {/* Structured Data */}
         <StructuredData />
