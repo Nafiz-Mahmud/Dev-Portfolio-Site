@@ -2,34 +2,35 @@
 import { motion } from "motion/react";
 import Link from "next/link";
 import Image from "next/image";
+
 export default function ProjectsSection() {
   const projects = [
     {
       id: 1,
-      img: "/project_first.png",
-      alt: "Starlab Marketing web application - platform for understanding marketing",
-      title: "Starlab Marketing",
-      desc: "A full-featured platform for people to understand marketing.",
-      tags: ["React", "Tailwind", "TypeScript", "SEO"],
-      link: "https://starlab.vercel.app",
+      img: "/project_one.png",
+      alt: "High-converting Framer website designed to help therapy and mental wellness professionals build trust and seamlessly convert visitors into booked clients.",
+      title: "Aura Wellness - Therapy & Counseling",
+      desc: "High-converting Framer website designed to help therapy and mental wellness professionals build trust and seamlessly convert visitors into booked clients.",
+      tags: ["Framer", "Animation", "Responsive", "SEO", "Form"],
+      link: "https://zany-work-849113.framer.app",
     },
     {
       id: 2,
-      img: "/project_second.png",
+      img: "/project_two.png",
       alt: "Wellhall Resort & Spa Hotel booking platform web application",
       title: "Wellhall - Resort & Spa Hotel",
-      desc: "A full-featured online booking platform for Wellhall - resort & spa hotel.",
-      tags: ["React", "Tailwind", "TypeScript", "SEO"],
+      desc: "A premium, end-to-end booking platform for a luxury resort and spa, featuring real-time availability, secure payments, and an intuitive UI.",
+      tags: ["React", "Next.js", "Tailwind", "TypeScript", "SEO"],
       link: "https://wellhall-resort-next-tailwind.vercel.app",
     },
     {
       id: 3,
-      img: "/project_third.png",
-      alt: "Manreka Accounting web application - real-time collaborative accounting for small business",
-      title: "Manreka Accounting",
-      desc: "A real-time collaborative accounting web application for a small business.",
-      tags: ["Next.js", "TypeScript", "Tailwind"],
-      link: "https://manreka-accounting-solid-tailwind-frontend.vercel.app",
+      img: "/project_three.png",
+      alt: "A sleek, high-converting & visually stunning Framer website for an AI SaaS startup, designed to captivate visitors and drive conversions.",
+      title: "Aether - AI SaaS Startup",
+      desc: "A sleek, high-converting, & visually stunning Framer website for an AI SaaS startup, designed to captivate visitors and drive conversions.",
+      tags: ["Framer", "SEO", "Responsive", "Animation", "Form"],
+      link: "https://talented-stick-251184.framer.app/",
     },
   ];
   return (
@@ -52,7 +53,8 @@ export default function ProjectsSection() {
       >
         A showcase of my recent work and personal projects
       </motion.h3>
-      <div className="project_cards mt-20 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] justify-between gap-6 ">
+      {/* Classic Design  */}
+      <div className="project_cards mt-20 grid grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] sm:grid-cols-[repeat(auto-fit,_minmax(350px,_1fr))] justify-between gap-4 ">
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
@@ -69,9 +71,9 @@ export default function ProjectsSection() {
                 rel="noopener noreferrer"
               >
                 <Image
-                  className="object-cover object-center"
+                  className="object-cover object-top"
                   src={project.img}
-                  alt="/"
+                  alt={project.alt}
                   fill={true}
                 />
               </Link>
