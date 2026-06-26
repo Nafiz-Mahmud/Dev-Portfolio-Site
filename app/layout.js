@@ -26,12 +26,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* Google analytics ID  */}
-        {/* <GoogleAnalytics gaId="G-VFXW1N0GH4" /> */}
+        <GoogleAnalytics gaId="G-VFXW1N0GH4" />
         {/* Google Search Console Verification Meta Tag */}
-        {/* <meta
+        <meta
           name="google-site-verification"
           content="ALqUo0ZH2OTfDtjg8SH8Rr6uR8h60KZeE9rhBnXW9EI"
-        /> */}
+        />
         {/* Structured Data */}
         <StructuredData />
       </head>
