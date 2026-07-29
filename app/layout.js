@@ -2,8 +2,6 @@ import { Tomorrow } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
-import Navbar from "@/components/nav.jsx";
-import FooterSection from "@/components/footer";
 
 const tomorrow = Tomorrow({
   variable: "--font-tomorrow",
@@ -36,10 +34,8 @@ export default function RootLayout({ children }) {
         <StructuredData />
       </head>
       <body className={tomorrow.className}>
-        <Navbar />
         <hr className="bg-lightblue h-[0.1rem]" />
         {children}
-        <FooterSection />
       </body>
     </html>
   );

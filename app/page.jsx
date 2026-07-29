@@ -5,6 +5,8 @@ import ProjectsSection from "@/components/projects";
 import TestimonialSection from "@/components/testimonials";
 import FAQSection from "@/components/faq";
 import ContactSection from "@/components/contact";
+import Navbar from "@/components/nav";
+import FooterSection from "@/components/footer";
 // test //
 import ViewportSize from "@/components/viewport";
 
@@ -12,15 +14,15 @@ export default function Home() {
   return (
     <div className="homepage  max-w-[1400px] w-[96%] mx-auto">
       {/* <ViewportSize /> */}
-
+      <Navbar />
       <HeroSection />
       <SocialsSection />
       <SkillsExpertiseSection />
       <ProjectsSection />
-
       <TestimonialSection />
       <FAQSection />
       <ContactSection />
+      <FooterSection />
     </div>
   );
 }

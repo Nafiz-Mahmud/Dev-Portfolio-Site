@@ -9,13 +9,13 @@ export default function Navbar() {
   return (
     <motion.nav
       id="navbar"
-      className="navbar  relative overflow-visible  text-white flex justify-between items-center py-2 mx-auto w-[96%] max-w-[1400px]"
+      className="navbar relative overflow-visible  text-white flex justify-between items-center py-2 mx-auto w-[96%] max-w-[1400px]"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <Link href="/">
-        <div className="title hover:opacity-80 cursor-pointer flex gap-2 items-center">
+        <div className="title hover:opacity-80 cursor-pointer flex  gap-2 items-center">
           <Image
             src="/devlogo.png"
             alt="Nafiz M. - Web developer logo"
@@ -27,7 +27,7 @@ export default function Navbar() {
       </Link>
 
       {/* Desktop Links */}
-      <div className="links hidden md:flex gap-8 font-semibold">
+      <div className="links  hidden  md:flex gap-8 font-semibold">
         <Link href="/" className="hover:opacity-70">
           Home
         </Link>
@@ -38,7 +38,9 @@ export default function Navbar() {
           Projects
         </Link>
         {/* <Link href="#pricing_section">Pricing</Link> */}
-        {/* <Link href="/blog">Blog</Link> */}
+        <Link href="/blogs" className="hover:opacity-70">
+          Blogs
+        </Link>
         <Link href="#testimonials_section" className="hover:opacity-70">
           Testimonials
         </Link>
@@ -121,12 +123,20 @@ export default function Navbar() {
             </Link> */}
             {/* <hr className="opacity-50" /> */}
             <Link
+              href="/blogs"
+              className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
+              onClick={() => setIsOpen(false)}
+            >
+              Blogs
+            </Link>
+            <hr className="opacity-50" />
+            <Link
               href="#testimonials_section"
               className="block px-3 py-2 rounded-md  hover:bg-lightgray/50 hover:opacity-80"
               onClick={() => setIsOpen(false)}
             >
               Testimonials
-            </Link>{" "}
+            </Link>
             <hr className="opacity-50" />
             <Link
               href="#contact_section"
