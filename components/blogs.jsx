@@ -36,7 +36,7 @@ export default async function BlogsComp({ layout, maxBlog }) {
           .join(""),
       )
       .join("\n");
-    return fullText.slice(0, 150);
+    return fullText.slice(0, 120);
   };
 
   // Function to calculate relative time from the published date
