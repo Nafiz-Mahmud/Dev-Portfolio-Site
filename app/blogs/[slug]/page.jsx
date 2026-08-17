@@ -10,22 +10,30 @@ export async function generateMetadata({ params }) {
     .join(" ");
 
   return {
-    title: `${blogTitle} | Digital Blueprint Blogs`,
-    description: `Read ${blogTitle}, a post from The Digital Blueprint blog about web development, UI/UX, and modern digital experiences.`,
-    keywords: ["web development blog", "Next.js", "React", "UI/UX", blogTitle],
+    title: `${blogTitle} | The Digital Blueprint Blogs`,
+    description: `Read ${blogTitle}, a post from The Digital Blueprint Which Explains Website Problems & Questions`,
+    keywords: [
+      "website maintenance",
+      "website troubleshooting",
+      "website management",
+      "website redesign",
+      "small business website",
+      "website optimization",
+      blogTitle,
+    ],
     alternates: {
       canonical: `/blogs/${slug}`,
     },
     openGraph: {
-      title: `${blogTitle} | Digital Blueprint Blogs`,
-      description: `Read ${blogTitle}, a post from The Digital Blueprint blog about web development, UI/UX, and modern digital experiences.`,
+      title: `${blogTitle} | The Digital Blueprint Blogs`,
+      description: `Read ${blogTitle}, a post from The Digital Blueprint Which Explains Website Problems & Questions`,
       url: `/blogs/${slug}`,
       type: "article",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${blogTitle} | Digital Blueprint Blogs`,
-      description: `Read ${blogTitle}, a post from The Digital Blueprint blog about web development, UI/UX, and modern digital experiences.`,
+      title: `${blogTitle} | The Digital Blueprint Blogs`,
+      description: `Read ${blogTitle}, a post from The Digital Blueprint Which Explains Website Problems & Questions`,
     },
   };
 }
@@ -45,8 +53,14 @@ export default async function BlogPage({ params }) {
         The <span className="text-orange-300">Digital Blueprint</span> Blogs
       </h2>
       <p className="text-center text-gray-300 text-lg mt-2">
-        Architecting websites that build businesses.
+        Common Website Related Questions and Problems Fixed & Explained
       </p>
+      <Link
+        href="/blogs"
+        className="text-start text-blue-400 hover:underline mt-4"
+      >
+        <p>{">> "} Go Back to Blogs</p>
+      </Link>
       <div className="blog_and_sidebar mt-8 mb-12 flex gap-6">
         <div className="blog_side flex-2">
           <BlogComp slug={slug} />
@@ -59,7 +73,7 @@ export default async function BlogPage({ params }) {
 
       <div className="bottom_blogs mt-24">
         <p className="text-white font-semibold text-2xl">More Blogs</p>
-        <BlogsComp layout="grid" />
+        <BlogsComp layout="grid" sort="random" />
       </div>
       <p className="text-center bg-blue-950 p-3 rounded-lg text-xl my-6 text-white font-semibold">
         Need a website?{" "}

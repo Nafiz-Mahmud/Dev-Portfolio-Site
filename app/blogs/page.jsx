@@ -2,25 +2,24 @@ import BlogsComp from "@/components/blogs";
 import Link from "next/link";
 
 export const metadata = {
-  title:
-    "The Digital Blueprint Blogs | Architecting websites that build businesses.",
+  title: "The Digital Blueprint | Website Problems & Questions, Explained",
   description:
-    "Explore insightful articles on web development, UI/UX, Next.js, React, and modern digital product design.",
+    "Stuck on a website issue? Digital Blueprint breaks down common website problems, costs, and questions in plain English, so you can fix it or know who to call.",
   keywords: [
-    "web development blog",
-    "Next.js blog",
-    "React tutorials",
-    "UI/UX design",
-    "frontend development",
+    "website maintenance",
+    "website troubleshooting",
+    "website management",
+    "website redesign",
+    "small business website",
+    "website optimization",
   ],
   alternates: {
     canonical: "/blogs",
   },
   openGraph: {
-    title:
-      "The Digital Blueprint Blogs| Architecting websites that build businesses.",
+    title: "The Digital Blueprint | Website Problems & Questions, Explained",
     description:
-      "Explore insightful articles on web development, UI/UX, Next.js, React, and modern digital product design.",
+      "Stuck on a website issue? Digital Blueprint breaks down common website problems, costs, and questions in plain English, so you can fix it or know who to call.",
     url: "/blogs",
     type: "website",
   },
@@ -39,11 +38,11 @@ export default function BlogsPage() {
         The <span className="text-orange-300">Digital Blueprint</span> Blogs
       </h2>
       <p className="text-center text-gray-300 text-lg mt-2">
-        Architecting websites that build businesses.
+        Common Website Related Questions and Problems Fixed & Explained
       </p>
       <BlogsComp layout="grid" />
       <p className="text-center bg-blue-950 p-3 rounded-lg text-xl mt-2 mb-8 text-white font-semibold">
-        Need a websiteeee?{" "}
+        Need a website?{" "}
         <Link href="/">
           <span className="text-blue-400 hover:underline">Click here!</span>
         </Link>

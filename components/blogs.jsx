@@ -13,7 +13,7 @@ const POSTS_QUERY = `*[
 // Revalidate after 1 day
 const options = { next: { revalidate: 60 * 60 * 24 } };
 
-export default async function BlogsComp({ layout, maxBlog }) {
+export default async function BlogsComp({ layout, sort, maxBlog }) {
   // Fetched posts from Sanity using the defined query and options
   const posts = await client.fetch(POSTS_QUERY, {}, options);
 
@@ -66,9 +66,8 @@ export default async function BlogsComp({ layout, maxBlog }) {
   };
 
   return (
-    <main className="container my-12">
+    <main className="container  my-12">
       <ul
-        //   className="posts my-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"
         className={`posts my-8 ${layout === "grid" ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3" : "flex flex-col"} gap-4`}
       >
         {maxBlog
@@ -90,9 +89,9 @@ export default async function BlogsComp({ layout, maxBlog }) {
                     </div>
                   </Link>
                 )}
-                <div className="post_info p-4">
+                <div className="post_info  p-4">
                   <Link href={`/blogs/${post.slug.current}`}>
-                    <h2 className="text-2xl  mt-2 font-bold hover:text-blue-300 transition-colors duration-300">
+                    <h2 className="text-xl  mt-2 font-bold hover:text-blue-300 transition-colors duration-300">
                       {post.title}
                     </h2>
                   </Link>
@@ -144,7 +143,7 @@ export default async function BlogsComp({ layout, maxBlog }) {
                 )}
                 <div className="post_info p-4">
                   <Link href={`/blogs/${post.slug.current}`}>
-                    <h2 className="text-2xl  mt-2 font-bold hover:text-blue-300 transition-colors duration-300">
+                    <h2 className="text-xl  mt-2 font-bold hover:text-blue-300 transition-colors duration-300">
                       {post.title}
                     </h2>
                   </Link>

@@ -9,7 +9,45 @@
   <url>
     <loc>https://nafizdevportfolio.vercel.app/blogs</loc>
     <lastmod>2026-07-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+   <url>
+    <loc>https://nafizdevportfolio.vercel.app/blogs/top-10-hidden-costs-of-a-cheap-website</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+     <url>
+    <loc>https://nafizdevportfolio.vercel.app/blogs/my-last-web-developer-disappeared-how-to-avoid-that-nightmare</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+   <url>
+    <loc>https://nafizdevportfolio.vercel.app/blogs/why-does-my-website-look-terrible-on-mobile</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+   <url>
+    <loc>https://nafizdevportfolio.vercel.app/blogs/5-signs-your-website-is-scaring-away-potential-customers</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+   <url>
+    <loc>https://nafizdevportfolio.vercel.app/blogs/your-contact-form-is-broken-here-is-how-to-tell</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+   <url>
+    <loc>https://nafizdevportfolio.vercel.app/blogs/why-your-website-is-not-showing-up-on-google-and-3-quick-fixes</loc>
+    <lastmod>2026-08-15</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 </urlset>

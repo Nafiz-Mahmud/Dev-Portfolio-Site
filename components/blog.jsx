@@ -1,4 +1,5 @@
 import { PortableText } from "next-sanity";
+import { notFound } from "next/navigation";
 import { createImageUrlBuilder } from "@sanity/image-url";
 import { client } from "@/sanity_client/client";
 import Link from "next/link";
@@ -18,6 +19,9 @@ export default async function BlogComp({ slug }) {
   const options = { next: { revalidate: 60 * 60 * 24 * 7 } };
 
   const post = await client.fetch(POST_QUERY, { slug }, options);
+  if (!post) {
+    notFound();
+  }
   // const post = await client.fetch(POST_QUERY, { slug }, options);
   const postImageUrl = (await post.mainImage)
     ? urlFor(post.mainImage)?.url()
@@ -58,7 +62,9 @@ export default async function BlogComp({ slug }) {
             className="w-[100%] md:w-3/4 h-[20rem] object-cover object-center rounded-xl"
           />
         )}
-        <h1 className="text-4xl font-bold mt-8 mb-6 ">{post.title}</h1>
+        <h2 className="text-xl md:text-[1.8rem] font-bold mt-8 mb-6 ">
+          {post.title}
+        </h2>
         <p className="text-gray-500">
           Published: {getRelativeTime(post.publishedAt)}
         </p>
